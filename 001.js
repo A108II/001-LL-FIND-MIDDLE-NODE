@@ -56,6 +56,8 @@ class LinkedList {
     let fast = this.head;
 
     while (fast !== null && fast.next !== null) {
+      // FOR EVEN AMOUNT OF ITEMS FAST !== NULL IS CONSIDERED
+      // FOR ODD AMOUNT OF ITEMS FAST.NEXT !== NULL IS CONSIDERED
       slow = slow.next;
       fast = fast.next.next;
     }
